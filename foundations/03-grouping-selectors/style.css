@@ -1,0 +1,13 @@
+.common {
+    font-size: 28px;
+    font-family: Helvetica, 'Times New Roman', sans-serif;
+}
+body button:first-of-type {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+body button:last-of-type {
+    background-color: yellow;
+    color: black;
+}
