@@ -1,0 +1,16 @@
+.odd-numbers {
+    background-color: rgb(239, 115, 150);
+    font-family: Verdana, 'DejaVu Sans', sans-serif;
+}
+#secondEl {
+    color: hwb(240 0% 66%);
+    font-size: 36px;
+}
+.coolerEl {
+    font-size: 24px;
+}
+#fourthEl {
+    background-color: hsla(91, 86%, 72%, 0.88);
+    font-size: 24px;
+    font-weight: bold;
+}
