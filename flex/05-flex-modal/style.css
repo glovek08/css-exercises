@@ -19,24 +19,34 @@ body {
   background: white;
   width: 480px;
   border-radius: 10px;
+  padding: 20px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
-
+.header {
+  font-weight: bolder;
+  font-size: 1.2em;
+}
 .icon {
-  color: royalblue;
+  color: white;
   font-size: 26px;
   font-weight: 700;
-  background: lavender;
+  background: rgb(255, 97, 97);
   width: 42px;
   height: 42px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: flex-start;
+  flex-shrink: 0;
 }
 
 .close-button {
-  background: #eee;
+  background: #e6e6e6;
   border-radius: 50%;
   color: #888;
   font-weight: 400;
@@ -46,24 +56,33 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: flex-start;
+  flex-shrink: 0;
   border: 1px solid #eee;
   padding: 0;
 }
-
+.flex-item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
 button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+  font-weight: bold;
 }
 
 button.continue {
-  background: royalblue;
-  border: 1px solid royalblue;
-  color: white;
+  background: rgb(225, 255, 187);
+  border: 1px solid rgb(118, 179, 137);
+  color: rgb(0, 87, 12);
 }
 
 button.cancel {
-  background: white;
-  border: 1px solid #ddd;
-  color: royalblue;
+  background: rgb(249, 232, 232);
+  border: 1px solid #ce9c9c;
+  color: rgb(116, 13, 13);
 }
