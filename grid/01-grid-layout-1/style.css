@@ -1,17 +1,17 @@
 body,
 html {
-  height: 100dvh;
+  height: 100%;
   margin: 0;
 }
 
+
 .grid-container {
   text-align: center;
-  height: 100%;
-  padding: 16px;
+  padding: 20px;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(1fr, 6);
-  grid-template-rows: repeat(1fr, 6);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, minmax(fit-content, 1fr));
   grid-template-areas: 
     "header header header header header header"
     "sidebar nav nav nav nav nav"
@@ -19,7 +19,7 @@ html {
     "sidebar article article article article article"
     "sidebar article article article article article"
     "footer footer footer footer footer footer";
-    gap: 1%;
+    gap: 10px;
 }
 
 .grid-container div {
@@ -27,7 +27,7 @@ html {
   font-size: 32px;
   font-family: Helvetica;
   font-weight: bold;
-  color: white;
+  color: rgb(255, 255, 255);
   border-radius: 15px;
 }
 
@@ -58,7 +58,9 @@ html {
 
 .article p {
   font-size: 18px;
+  font-weight: normal;
   font-family: sans-serif;
   color: white;
   text-align: left;
+  padding: 5px 20px;
 }
